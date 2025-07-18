@@ -1,0 +1,13 @@
+2025-07-12 06:59:51.948 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Facebook helps you connect and share with the people in your life.
+2025-07-12 07:00:05.656 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Facebook helps you connect and share with the people in your life.
+2025-07-12 07:01:33.800 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 07:02:27.247 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 07:33:28.741 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 10:17:07.605 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 10:33:27.568 [TestNG-test-Chrome Test-1] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 10:33:29.073 [TestNG-test-Firefox Test-1] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 10:37:54.860 [TestNG-test-Chrome Test-1] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 10:37:56.793 [TestNG-test-Firefox Test-1] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 11:07:03.836 [TestNG-test-Chrome Test-2] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 11:07:08.693 [TestNG-test-Firefox Test-2] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
+2025-07-12 11:37:13.208 [main] ERROR com.demo.seleniump.firstproject.utils.Log - Entered Text: Login Now
