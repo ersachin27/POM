@@ -3,7 +3,7 @@ name: CI/CD Pipeline for Selenium WebDriver Tests
 on:
   schedule:
     - cron: '0 * * * *'  # Runs every hour at minute 0
-  
+  workflow_dispatch: # Allows manual trigger from the GitHub UI
 jobs:
   build:
     runs-on: windows-latest
