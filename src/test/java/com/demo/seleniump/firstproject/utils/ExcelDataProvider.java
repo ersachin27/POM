@@ -6,7 +6,7 @@ public class ExcelDataProvider {
 
     @DataProvider(name = "loginData")
     public static Object[][] getLoginData() {
-        String path = "C:\\SeleniumP\\src\\test\\resources\\testdata\\TestData.xlsx";
+        String path = "src\\test\\resources\\testdata\\TestData.xlsx";
         return ExcelUtils.getFilteredData(path, "LoginData");
     }
 }
