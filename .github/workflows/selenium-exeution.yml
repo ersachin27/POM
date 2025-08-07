@@ -38,14 +38,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: extent-report
-          path: C:\\SeleniumP\\reports\\ExtentReport.html
+          path: reports\\ExtentReport.html
 
       # Upload TestNG Results as an artifact
       - name: Upload TestNG Results as artifact
         uses: actions/upload-artifact@v4
         with:
           name: testng-report
-          path: C:\\SeleniumP\\test-output\\index.html
+          path: test-output\\index.html
 
       # Send email with the reports attached using Gmail's SMTP server
       - name: Send email with reports via Gmail
