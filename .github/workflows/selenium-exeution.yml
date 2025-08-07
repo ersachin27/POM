@@ -34,7 +34,7 @@ jobs:
 
       # Upload Extent Report as an artifact
       - name: Upload Extent Report as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: extent-report
           path: C:\\SeleniumP\\reports\\ExtentReport.html
