@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'adoptium'  # Replace with any JDK distribution you prefer
+          distribution: 'adoptopenjdk'  # Replace with any JDK distribution you prefer
 
       # Cache Maven dependencies to speed up builds
       - name: Cache Maven dependencies
