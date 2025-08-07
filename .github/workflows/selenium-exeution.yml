@@ -1,12 +1,9 @@
 name: CI/CD Pipeline for Selenium WebDriver Tests
 
 on:
-schedule:
-- cron: '0 * * * *'  # Runs every hour at minute 0
-	
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour at minute 0
   
-	  
-	 
 jobs:
   build:
     runs-on: windows-latest
@@ -26,7 +23,7 @@ jobs:
       - name: Cache Maven dependencies
         uses: actions/cache@v2
         with:
-          path: C:\Users\runneradmin\.m2\repository
+          path: C:\\Users\\runneradmin\\.m2\\repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
@@ -40,27 +37,27 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: extent-report
-          path: C:\SeleniumP\reports\ExtentReport.html
+          path: C:\\SeleniumP\\reports\\ExtentReport.html
 
       # Upload TestNG Results as an artifact
       - name: Upload TestNG Results as artifact
         uses: actions/upload-artifact@v2
         with:
           name: testng-report
-          path: C:\SeleniumP\test-output\index.html
-		  
-		  # Send email with the reports attached using Gmail's SMTP server
-		       - name: Send email with reports via Gmail
-		         uses: dawidd6/action-send-mail@v3
-		         with:
-		           server_address: smtp.gmail.com
-		           server_port: 587
-		           username: ${{ secrets.GMAIL_USERNAME }}   # Store Gmail email in GitHub Secrets
-		           password: ${{ secrets.GMAIL_APP_PASSWORD }}  # Store Gmail App Password in GitHub Secrets
-		           from: ${{ secrets.GMAIL_USERNAME }}    # Sender's Gmail address
-		           to: sachin2788@gmail.com  # Recipient's email address
-		           subject: 'Hourly Selenium WebDriver Test Report'
-		           body: 'Please find the attached test report.'
-		           attachments: |
-		             C:\SeleniumP\reports\ExtentReport.html  # Attach the Extent Report
-		             C:\SeleniumP\test-output\index.html   # Attach the TestNG Report
+          path: C:\\SeleniumP\\test-output\\index.html
+
+      # Send email with the reports attached using Gmail's SMTP server
+      - name: Send email with reports via Gmail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.GMAIL_USERNAME }}   # Store Gmail email in GitHub Secrets
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}  # Store Gmail App Password in GitHub Secrets
+          from: ${{ secrets.GMAIL_USERNAME }}    # Sender's Gmail address
+          to: sachin2788@gmail.com  # Recipient's email address
+          subject: 'Hourly Selenium WebDriver Test Report'
+          body: 'Please find the attached test report.'
+          attachments: |
+            C:\\SeleniumP\\reports\\ExtentReport.html  # Attach the Extent Report
+            C:\\SeleniumP\\test-output\\index.html   # Attach the TestNG Report
